@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="scrobbbbler"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/subtitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phase 1: capture Eddict notifications and inspect the metadata."
+            android:textSize="16sp"
+            android:paddingBottom="16dp" />
+
+        <Button
+            android:id="@+id/grantAccessButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grant notification access" />
+
+        <Button
+            android:id="@+id/refreshButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Refresh latest captured notification" />
+
+        <TextView
+            android:id="@+id/latestLabelTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Latest captured notification:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/latestTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Nothing yet."
+            android:textIsSelectable="true"
+            android:textSize="14sp"
+            android:typeface="monospace" />
+
+    </LinearLayout>
+</ScrollView>
